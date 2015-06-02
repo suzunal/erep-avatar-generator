@@ -1,0 +1,256 @@
+<!DOCTYPE html> 
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> 
+<![endif]--> <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> 
+<![endif]--> <!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]--> 
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>[Reiyo][2.05]Framing APP</title>
+<meta name="description" content=""> 
+<meta name="viewport" content="width=device-width">
+
+<style> #slider { margin: 10px; width: 200px;}	</style>
+</head>
+<body>
+ <!--[if lt IE 7]> <p class="chromeframe">更新瀏覽器吧Σ（°△°）</p><![endif]-->
+  <div id="header"><div id="title" title="Σ（°△°）">Reiyo的團框加入器</div></div>
+  <div id="container" class="container_16">
+    <div class="grid_8 height_420">
+      <div id="imgcanvas">這是框框（￣▽￣）</div>
+    </div>
+    <div class="grid_8 height_440">
+      
+      <div id="options" class="googlecards">
+        <div id="imgsetting" ><div id="imgsettingtitle">圖片設定: (實驗中)</div>
+        <button id="maskimg" class="square_button_mini b_border_orange" title="以四角顏色一樣時為去背色(一次性)">去背</button>
+        <button id="largerimg" class="square_button_mini b_border_orange">放大</button>
+        <button id="smallerimg" class="square_button_mini b_border_orange">縮小</button>
+        <button id="oriimg" class="square_button_mini b_border_orange">原尺</button>
+        </div>
+        <div id="file_browse" class="b_green dragok" title="可拖拉 按圖可抓角位放大縮小Σ（°△°）">
+        <input id="file" type="file" size="10" />
+        加入圖片
+        </div><br />
+        <div class="framelist">
+          <div class="row">
+            <div class="left">
+              NACJAC團框:
+              </div>
+            <div class="middle">
+              <input type="checkbox" id="layer1-options" autocomplete="off"><label for="layer1-options"> 名字 </label>
+            </div>
+            <div class="right">
+              <input type="checkbox" id="layer2-options" autocomplete="off"><label for="layer2-options"> 背境 </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="left">
+              FoxHound團框:
+            </div>
+            <div class="middle">
+              <input type="checkbox" id="layer3-options" autocomplete="off"><label for="layer3-options"> 全框 </label>
+            </div>
+            <div class="right"></div>
+          </div>
+          <div class="row">
+            <div class="left">
+              ROC SFG團框:
+            </div>
+            <div class="middle">
+              <input type="checkbox" id="layer5-options" autocomplete="off"><label for="layer5-options"> 全框 </label>
+            </div>
+            <div class="right">
+              <input type="checkbox" id="layer6-options" autocomplete="off"><label for="layer6-options" class="dragok" title="可拖拉Σ（°△°）">徽章</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="left">
+              MOB團框:
+            </div>
+            <div class="middle">
+              <input type="checkbox" id="layer7-options" autocomplete="off"><label for="layer7-options"> 全框款式一 </label>
+            </div>
+            <div class="right">
+              <input type="checkbox" id="layer8-options" autocomplete="off"><label for="layer8-options"> 全框款式二 </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="left">
+              國軍團框:
+            </div>
+            <div class="middle">
+              <input type="checkbox" id="layer9-options" autocomplete="off"><label for="layer9-options"> 全框 </label>
+            </div>
+            <div class="right"> </div>
+          </div>
+          
+          <div class="row">
+            <div class="left">
+              OH團框:
+            </div>
+            <div class="middle">
+              <input type="checkbox" id="layer10-options" autocomplete="off"><label for="layer10-options"> 全框 </label>
+            </div>
+            <div class="right"></div>
+          </div>
+
+          <div class="row">
+            <div class="left">
+              NTA團框:
+            </div>
+            <div class="middle">
+              <input type="checkbox" id="layer12-options" autocomplete="off"><label for="layer12-options"> 全框 </label>
+            </div>
+            <div class="right"></div>
+          </div>
+          <div class="row">
+            <div class="left">
+              凱薩沙拉專用框:
+            </div>
+
+            <div class="middle">
+              <input type="checkbox" id="layer4-options" autocomplete="off"><label for="layer4-options"> 全框 </label>
+            </div>
+
+            <div class="right">
+              <input type="checkbox" id="layer11-options" autocomplete="off"><label for="layer11-options"> 搖來搖去的星星 </label></div>
+          </div>
+          
+          
+          <div class="row">
+            <div class="left">
+              絲帶:
+            </div>
+
+            <div class="middle">
+              <input type="checkbox" id="layer13-options" autocomplete="off"><label for="layer13-options" class="dragok" title="可拖拉Σ（°△°）"> 黃色 </label>
+            </div>
+
+            <div class="right"></div>
+          </div>
+        </div>
+        
+        <br />
+        <hr />
+        <p></p>
+        <button id="saveimg" class="square_button b_purple">存圖檔</button>
+        <button id="resetimg" class="square_button b_red">重設畫框</button>
+        <input type="checkbox" id="ctrlframe" autocomplete="off"><label for="ctrlframe" class="dragok" title="可拖拉Σ（°△°）"> 移動團框 </label>
+        <input type="checkbox" id="eraser" autocomplete="off"><label for="eraser" > 畫筆模式 </label>
+        <button id="undobrush" class="square_button_mini b_border_orange">UNDO</button>
+
+        <input type='text' id="fullcolor"/>
+
+
+        <br />
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer" class="grid_16">
+      <hr />
+        <p id="notice">注意,這站僅產生圖檔,你需要按"存圖檔"後,下載檔案,自行上傳更換頭圖.</p>
+        <small>-1.01 正式公開 -  2013/5/25</small> <br />
+        <small>-1.02 加入新框 -  2013/5/26</small> <br />
+        <small>-1.03 加入凱薩專用框 -  2013/5/27</small> <br />
+        <small>-1.03.1 加入ROC SFG框 - 2013/7/29 </small> <br />
+        <small>-2.00 以新HTML5框架 <a href="http://kineticjs.com/" target="_blank">KineticJS</a>重寫,加入縮小放大功能 - 2013/8/28 </small> <br />
+        <small>-2.00.1 加入MOB與國軍與OH框,修復BUG(存檔格式PNG轉換為JPG,圖層編錯) - 2013/8/28 </small> <br />
+        <small>-2.01 加入控制團框選項(開放拖拉),修復BUG(按鈕指標改成手指) - 2013/8/28 </small> <br />
+        <small>-2.02 加入放大縮小功能(實驗中)與凱薩特製星星,修正排版 - 2013/8/31 </small> <br />
+        <small>-2.03 加入實驗性極高的去背功能 - 2013/8/31 </small> <br />
+        <small>-2.03.1 加入NTA框 - 2013/9/8 </small> <br />
+        <small>-2.04 修BUG,加入畫筆模式 - 2013/12/12 </small> <br />
+        <small>-2.05 修BUG,加入絲帶 - To be continued </small> <br />
+
+      <br />
+      <small>By. Reiyo</small><br />
+      <small>Version 2.05</small><br />
+      <small>- Firefox, Chrome Only -</small><br />
+      <small>- <strike>IE不支援,因為HTML5 FILE API不完整</strike> -</small><br />
+      <small>- 待做事件: 重製UI部份 -</small><br />
+      <small>- 舊版連接: <a href="./old_v1/erepframe.html" target="_blank">v1.03.1</a> -</small>
+    </div>
+  </div>
+</body>
+<link rel="stylesheet" type="text/css" href="./css/960/reset.css">
+<link rel="stylesheet" type="text/css" href="./css/960/960.css">
+<link rel="stylesheet" type="text/css" href="./css/960/text.css">
+<link rel="stylesheet" type="text/css" href="./css/reiyoapp.css">
+<link rel="stylesheet" type="text/css" href="./css/tipsy.css">
+<link rel="stylesheet" type="text/css" href="./css/spectrum.css">
+    <script type='text/javascript' src="./js/jquery-1.9.1.js"></script>
+    <script type='text/javascript' src="./js/kinetic-v4.6.0.min.js"></script>
+    <script type='text/javascript' src="./js/jquery.tipsy.js"></script>
+    <script type='text/javascript' src="./js/spectrum.js"></script>
+    <script defer="defer" src="./js/reiyo-app-1.03.js"></script>
+    <script>
+           $(function() {
+              $('a[rel=tipsy]').tipsy({fade: true, gravity: 'n'});
+              $('.dragok').tipsy({fade: true, gravity: 'w'});
+              $('#title').tipsy({fade: true, gravity: 's'});
+              $('#ctrlframe').tipsy({fade: true, gravity: 'e'});
+              $('#maskimg').tipsy({fade: true, gravity: 'e'});
+
+              var layer_nums = 13;
+              $( "#resetimg" ).click(function(){
+                  $( "#ctrlframe" ).prop('checked', false);
+                  $( "#eraser" ).prop('checked', false);
+                  for(var i= 1; i < layer_nums+1; i++){
+                    $( "#layer"+i+"-options" ).prop('checked', false);
+                  }
+              });
+              for(var i= 1; i < layer_nums+1; i++){
+                $( "#layer"+i+"-options:checkbox").attr("autocomplete", "off");
+              }
+              $( "#ctrlframe:checkbox").attr("autocomplete", "off");
+              $( "#eraser:checkbox").attr("autocomplete", "off");
+
+
+              $("#fullcolor").spectrum({
+                  color: "#ECC",
+                  showInput: true,
+                  className: "full-spectrum",
+                  showInitial: true,
+                  showPalette: true,
+                  showSelectionPalette: true,
+                  maxPaletteSize: 10,
+                  preferredFormat: "hex",
+                  localStorageKey: "spectrum.demo",
+                  move: function (color) {
+                      
+                  },
+                  show: function () {
+                  
+                  },
+                  beforeShow: function () {
+                  
+                  },
+                  hide: function () {
+                  
+                  },
+                  change: function() {
+                      
+                  },
+                  palette: [
+                      ["rgb(0, 0, 0)", "rgb(67, 67, 67)", "rgb(102, 102, 102)",
+                      "rgb(204, 204, 204)", "rgb(217, 217, 217)","rgb(255, 255, 255)"],
+                      ["rgb(152, 0, 0)", "rgb(255, 0, 0)", "rgb(255, 153, 0)", "rgb(255, 255, 0)", "rgb(0, 255, 0)",
+                      "rgb(0, 255, 255)", "rgb(74, 134, 232)", "rgb(0, 0, 255)", "rgb(153, 0, 255)", "rgb(255, 0, 255)"], 
+                      ["rgb(230, 184, 175)", "rgb(244, 204, 204)", "rgb(252, 229, 205)", "rgb(255, 242, 204)", "rgb(217, 234, 211)", 
+                      "rgb(208, 224, 227)", "rgb(201, 218, 248)", "rgb(207, 226, 243)", "rgb(217, 210, 233)", "rgb(234, 209, 220)", 
+                      "rgb(221, 126, 107)", "rgb(234, 153, 153)", "rgb(249, 203, 156)", "rgb(255, 229, 153)", "rgb(182, 215, 168)", 
+                      "rgb(162, 196, 201)", "rgb(164, 194, 244)", "rgb(159, 197, 232)", "rgb(180, 167, 214)", "rgb(213, 166, 189)", 
+                      "rgb(204, 65, 37)", "rgb(224, 102, 102)", "rgb(246, 178, 107)", "rgb(255, 217, 102)", "rgb(147, 196, 125)", 
+                      "rgb(118, 165, 175)", "rgb(109, 158, 235)", "rgb(111, 168, 220)", "rgb(142, 124, 195)", "rgb(194, 123, 160)",
+                      "rgb(166, 28, 0)", "rgb(204, 0, 0)", "rgb(230, 145, 56)", "rgb(241, 194, 50)", "rgb(106, 168, 79)",
+                      "rgb(69, 129, 142)", "rgb(60, 120, 216)", "rgb(61, 133, 198)", "rgb(103, 78, 167)", "rgb(166, 77, 121)",
+                      "rgb(91, 15, 0)", "rgb(102, 0, 0)", "rgb(120, 63, 4)", "rgb(127, 96, 0)", "rgb(39, 78, 19)", 
+                      "rgb(12, 52, 61)", "rgb(28, 69, 135)", "rgb(7, 55, 99)", "rgb(32, 18, 77)", "rgb(76, 17, 48)"]
+                  ]
+              });
+            });
+    </script>
+
+
+</html>
