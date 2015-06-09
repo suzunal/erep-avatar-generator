@@ -1,11 +1,18 @@
 body{
     background-color: rgb(236, 236, 236);
     color: #251414;
+    font-family: "微軟雅黑體","MS PGothic";
+}
+
+small{
+    font-size: 12px;
+
 }
 
 #title{
     font-size: 28px;
   text-shadow: 2px 2px 2px #999; 
+    font-family: "微軟雅黑體","MS PGothic";
 }
 
 #header {
