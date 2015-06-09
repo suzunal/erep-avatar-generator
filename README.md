@@ -18,6 +18,6 @@ Version History:
 | 2013/08/31 | 2.02 | Added back zoom-in & zoom out, special animated Caesar frame. Fixed layout. |
 | 2013/08/31 | 2.03 | Added remove image background feature. (Experimental) |
 | 2013/09/08 | 2.03.1 | Added NTA frame. |
-| 2013/09/08 | 2.03.1 | Added NTA frame. |
 | 2013/12/12 | 2.04 | Fixed various bugs in coding. Added paint tool. |
 | 2015/02/23 | 2.05 | Added ribbon frame. |
+| 2015/06/08 | 2.06 | Fixed font display in CSS. |
